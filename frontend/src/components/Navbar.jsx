@@ -1,0 +1,7 @@
+export default function Navbar() {
+  return (
+    <nav className="p-4 bg-slate-900 text-xl font-bold">
+      OSS Sustainability Guardian
+    </nav>
+  );
+}
