@@ -2,13 +2,23 @@
 
 AI-Powered Pull Request Risk & Sustainability Analyzer for Open Source
 
-Automated GitHub Pull Request analysis using AI to detect risk, maintainability issues, and long-term sustainability impact — the moment a PR is created.
-frontend  https://frontend-chi-jet-30.vercel.app/
-backend  https://oss-sustainability-backend.vercel.app/webhooks/github
+OSS Sustainability Guardian is a production-ready, AI-driven system that automatically analyzes GitHub Pull Requests to detect risk, maintainability issues, and long-term sustainability impact the moment a PR is created.
 
-🔗 Live AI Engine: https://ai-engine-three.vercel.app
+It combines GitHub-native automation, AI agents, and modern cloud deployment to help open-source maintainers scale reviews without compromising code quality or project health.
 
-🔗 GitHub App: OSS Sustainability Guardian
+🔗 Live Links
+
+Frontend Dashboard:
+https://frontend-chi-jet-30.vercel.app/
+
+Backend Webhook Service (Vercel):
+https://oss-sustainability-backend.vercel.app/webhooks/github
+
+AI Engine (Oumi-powered):
+https://ai-engine-three.vercel.app
+
+GitHub App:
+OSS Sustainability Guardian
 
 📖 Table of Contents
 
@@ -28,7 +38,7 @@ How Oumi AI Is Used
 
 How Vercel Is Used
 
-End-to-End PR Flow
+End-to-End Pull Request Flow
 
 Quick Start
 
@@ -44,56 +54,62 @@ License
 
 🌟 Overview
 
-OSS Sustainability Guardian is an AI-driven system that automatically reviews GitHub Pull Requests and provides:
+Open-source projects grow through Pull Requests—but reviewing them does not scale.
+
+OSS Sustainability Guardian acts as an always-on AI reviewer that evaluates every Pull Request for:
 
 ⚠️ Risk Level (Low / Medium / High)
 
-📊 Code Health Score
+📊 Code Health & Sustainability Score
 
-🧠 Maintainability & sustainability insights
+🧠 Maintainability and long-term impact
 
-💡 Actionable feedback for maintainers
+💡 Actionable insights for maintainers
 
-The system works in real time using GitHub webhooks and AI analysis, helping open-source projects stay healthy and scalable.
+The system operates in real time using GitHub webhooks and a dedicated AI Engine, providing immediate intelligence instead of delayed manual reviews.
 
 💡 Problem & Solution
 ❌ The Problem: OSS Maintenance Bottleneck
 
-Open-source maintainers face:
+Open-source maintainers face recurring challenges:
 
 Challenge	Impact
-Large PRs	Hard to review manually
+Large Pull Requests	Hard to review manually
 Limited maintainers	Review delays
 Hidden risky changes	Bugs & regressions
 No sustainability metric	Long-term decay
 
-Manual reviews alone do not scale.
+Manual reviews alone do not scale as projects grow.
 
 ✅ The Solution: Automated AI PR Guardian
 
-OSS Sustainability Guardian acts as an always-on AI reviewer that:
+OSS Sustainability Guardian solves this by:
 
-Instantly analyzes every PR
+Automatically analyzing every PR on creation
 
-Flags risky changes
+Detecting risky or high-impact changes early
 
-Provides maintainability signals
+Providing sustainability and maintainability signals
 
-Helps maintainers make informed merge decisions
+Supporting maintainers with structured, explainable insights
+
+This allows maintainers to focus on decisions, not manual scanning.
 
 ✨ Key Features
 
-🤖 AI-powered PR analysis
+🤖 AI-powered Pull Request analysis
 
-⚠️ Risk classification
+⚠️ Automated risk classification
 
-📊 Health score generation
+📊 Code health & sustainability scoring
 
-🔗 Native GitHub integration
+🔗 Native GitHub App integration
 
 🌍 Real-time webhook-based automation
 
-📈 Frontend dashboard support
+📈 Frontend dashboard for visibility
+
+🧩 Clean microservice architecture
 
 🏗️ System Architecture
 GitHub Pull Request
@@ -102,11 +118,21 @@ GitHub Webhook
         ↓
 Backend (Vercel)
         ↓
-Oumi AI Engine (Render)
+Oumi AI Engine (AI Microservice)
         ↓
 Risk & Health Analysis
         ↓
-Frontend Dashboard / GitHub Feedback
+Frontend Dashboard / Maintainer Insights
+
+Architectural Principles
+
+Event-driven (GitHub webhooks)
+
+Separation of concerns (Backend vs AI Engine)
+
+Production-ready deployment
+
+OSS-friendly workflows
 
 🛠️ Technology Stack
 Backend & AI
@@ -114,7 +140,7 @@ Category	Technology
 Runtime	Node.js
 Language	TypeScript
 Server	Express.js
-AI Engine	Oumi (custom AI logic)
+AI Engine	Oumi (open-source)
 Validation	Zod
 Deployment	Render
 Frontend
@@ -125,13 +151,13 @@ Styling	Tailwind CSS
 Deployment	Vercel
 GitHub Integration
 Tool	Purpose
-GitHub App	PR events
+GitHub App	PR event access
 Webhooks	Real-time triggers
-CodeRabbit	Automated code review
-🐰 How CodeRabbit Is Used in This Project
+CodeRabbit	Automated PR review
+🐰 How CodeRabbit Is Used
 Role in OSS Sustainability Guardian
 
-CodeRabbit is used as an automated PR reviewer inside the GitHub workflow.
+CodeRabbit is integrated as an AI-assisted PR reviewer within the GitHub workflow.
 
 In this project:
 
@@ -145,51 +171,62 @@ Code quality suggestions
 
 Readability improvements
 
-Best-practice feedback
+Refactoring recommendations
 
-Why CodeRabbit Matters Here
+Documentation feedback
+
+Why CodeRabbit Matters
 
 CodeRabbit ensures:
 
-Clean PRs
+Clean Pull Requests
 
 Consistent review standards
 
-High-quality open-source contributions
+Professional open-source practices
 
-CodeRabbit complements our AI engine by enforcing clean OSS workflows and best practices.
+It complements our AI Engine by enforcing code-level quality, while OSS Sustainability Guardian focuses on risk and sustainability.
 
-🧠 How Oumi AI Engine Is Used
-Role in OSS Sustainability Guardian
+All CodeRabbit review activity is publicly visible in Pull Requests, demonstrating transparent OSS workflows.
 
-Oumi AI Engine is the brain of the system.
+🧠 How Oumi AI Is Used
+Role of the Oumi AI Engine
 
-It performs semantic PR analysis, focusing on:
+Oumi is the core intelligence layer of the system.
 
-Core logic changes
+It powers a dedicated AI Engine microservice that performs:
 
-Risk impact
+Semantic analysis of PR context
 
-Long-term sustainability
+Detection of core logic changes
 
-Maintainability signals
+Risk and sustainability assessment
 
-What Oumi AI Does
+Maintainability signal extraction
 
-Receives PR metadata
+Reinforcement Learning Fine-Tuning
 
-Analyzes change context
+Each Pull Request analysis is treated as an action.
 
-Assigns:
+Maintainer outcomes act as reward signals:
 
-Risk level
+PR merged → positive reinforcement
 
-Health score
+Changes requested or PR closed → negative/neutral feedback
 
-Returns structured AI insights
+This enables the AI Engine to adapt its decision policy over time, improving accuracy based on real open-source behavior.
 
-Example output:
+LLM-as-a-Judge
 
+The system also applies LLM-as-a-Judge techniques to:
+
+Self-evaluate AI suggestions
+
+Improve clarity and usefulness
+
+Maintain consistent output quality
+
+Example AI Output
 {
   "summary": "PR modifies core logic",
   "riskLevel": "Medium",
@@ -197,60 +234,57 @@ Example output:
 }
 
 
-Oumi AI turns raw PR data into actionable intelligence.
+Oumi transforms raw PR metadata into actionable intelligence.
 
 ☁️ How Vercel Is Used
-Role in OSS Sustainability Guardian
+Role of Vercel
 
-Vercel hosts the backend webhook receiver and frontend dashboard.
+Vercel acts as the control and presentation layer of the system.
 
-In this project, Vercel is responsible for:
+It hosts:
 
-Hosting the backend API
+Backend webhook receiver
 
-Receiving GitHub webhooks
-
-Triggering AI analysis
-
-Serving the frontend UI
+Frontend dashboard
 
 Why Vercel
 
-Fast deployments
+Fast global deployments
 
-Secure environment variables
+Secure environment variable handling
 
-Reliable webhook handling
+Reliable webhook processing
 
 Seamless frontend hosting
 
-Vercel acts as the control layer between GitHub and the AI Engine.
+The project is fully deployed on Vercel with a live production environment, demonstrating real-world readiness.
 
-🔁 End-to-End PR Flow
+🔁 End-to-End Pull Request Flow
 
 Developer opens a Pull Request
 
-GitHub triggers webhook
+GitHub triggers a webhook
 
-Backend (Vercel) receives event
+Backend (Vercel) receives the event
 
-Backend calls Oumi AI Engine
+Backend calls the Oumi AI Engine
 
-AI analyzes PR
+AI Engine analyzes PR risk & health
 
-Result shown on dashboard / used for decisions
+Results are returned
+
+Frontend dashboard displays insights
 
 CodeRabbit reviews PR in parallel
 
 🚀 Quick Start
-Clone Repository
 git clone https://github.com/sahu-virendra-1908/ai-engine.git
 cd ai-engine
 
 Install Dependencies
 npm install
 
-Setup Environment
+Environment Variables
 PORT=5000
 GITHUB_TOKEN=your_token
 GITHUB_WEBHOOK_SECRET=your_secret
@@ -262,7 +296,7 @@ npm start
 🔌 API Documentation
 POST /analyze
 
-Request:
+Request
 
 {
   "prNumber": 5,
@@ -270,7 +304,7 @@ Request:
 }
 
 
-Response:
+Response
 
 {
   "maintainer": {
@@ -288,8 +322,10 @@ Backend & Frontend: Vercel
 
 GitHub Integration: GitHub App + Webhooks
 
+All services are live and publicly accessible.
+
 🗺️ Roadmap
-Phase 1
+Phase 1 (Completed)
 
 ✅ Real-time PR analysis
 
@@ -305,7 +341,7 @@ Phase 3
 
 ML-based diff analysis
 
-Organization-level insights
+Organization-level sustainability insights
 
 🤝 Contributing
 
@@ -321,11 +357,11 @@ MIT License — free to use and modify.
 
 🏆 Hackathon Ready
 
-✔ Real-world OSS problem
+✔ Solves a real OSS problem
 ✔ Live deployment
 ✔ AI-powered automation
 ✔ GitHub-native workflow
-✔ Clean architecture
+✔ Clean, scalable architecture
 
-⭐ If you find this useful, please star the repository!
+⭐ If you find this useful, please star the repository.
 Built with ❤️ for the open-source community.
