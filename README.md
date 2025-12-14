@@ -3,8 +3,10 @@
 AI-Powered Pull Request Risk & Sustainability Analyzer for Open Source
 
 Automated GitHub Pull Request analysis using AI to detect risk, maintainability issues, and long-term sustainability impact — the moment a PR is created.
+frontend  https://frontend-chi-jet-30.vercel.app/
+backend  https://oss-sustainability-backend.vercel.app/webhooks/github
 
-🔗 Live AI Engine: https://ai-engine-2.onrender.com
+🔗 Live AI Engine: https://ai-engine-three.vercel.app
 
 🔗 GitHub App: OSS Sustainability Guardian
 
